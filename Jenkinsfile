@@ -6,7 +6,7 @@ pipeline {
         ECR_REPO = '789501569955.dkr.ecr.us-east-1.amazonaws.com/nodejs-app'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
 
-        // Inject AWS credentials from the Jenkins
+        // Inject AWS credentials from Jenkins
         AWS_ACCESS_KEY_ID = credentials('aws-creds')
         AWS_SECRET_ACCESS_KEY = credentials('aws-creds')
     }
